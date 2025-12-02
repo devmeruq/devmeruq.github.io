@@ -110,6 +110,52 @@
         </div>
     </div>
 
+<div class="container" style="border-top: 1px solid #334155; margin-top: 60px; padding-top: 60px;">
+        <h2 style="text-align: center; color: var(--light);">🚀 Flujo de Trabajo (Git Flow)</h2>
+        <p style="text-align: center; color: #94a3b8; max-width: 600px; margin: 0 auto 40px auto;">
+            Para mantener la integridad de nuestros sistemas productivos, todo colaborador debe seguir estrictamente este ciclo de desarrollo.
+        </p>
+
+        <div class="grid">
+            <div class="card" style="border-left: 5px solid #10b981;">
+                <h3 style="color: #10b981;">1. Fork & Clone</h3>
+                <p>No trabajes directo en el repo principal. <br>
+                1. Haz un <strong>Fork</strong> del repositorio a tu cuenta.<br>
+                2. Clona tu fork en local: <code>git clone [url]</code></p>
+            </div>
+
+            <div class="card" style="border-left: 5px solid #f59e0b;">
+                <h3 style="color: #f59e0b;">2. Feature Branch</h3>
+                <p>Nunca subas cambios a la rama <em>main</em>.<br>
+                Crea una rama descriptiva para tu tarea:<br>
+                <code>git checkout -b feature/nueva-facturacion</code></p>
+            </div>
+
+            <div class="card" style="border-left: 5px solid #ef4444;">
+                <h3 style="color: #ef4444;">⚠️ 3. ¡Sincroniza!</h3>
+                <p><strong>¿Pasó tiempo sin que trabajaras?</strong><br>
+                Antes de subir cambios, verifica si el repo original avanzó.<br>
+                Usa el botón <strong>"Sync Fork"</strong> en GitHub o:<br>
+                <code>git pull upstream main</code></p>
+            </div>
+
+            <div class="card" style="border-left: 5px solid #3b82f6;">
+                <h3 style="color: #3b82f6;">4. Pull Request (PR)</h3>
+                <p>Sube tu rama y abre un PR hacia <em>devmeruq/main</em>.<br>
+                Describe tus cambios detalladamente. El Tech Lead revisará el código antes de hacer <strong>Merge</strong>.</p>
+            </div>
+        </div>
+        
+        <div style="background: #000; padding: 20px; border-radius: 8px; margin-top: 40px; font-family: monospace; color: #0f0;">
+            <p style="margin:0; color: #fff; border-bottom: 1px solid #333; padding-bottom: 10px; margin-bottom: 10px;">💻 Cheat Sheet para evitar conflictos:</p>
+            git remote add upstream https://github.com/devmeruq/repo-objetivo.git<br>
+            git fetch upstream<br>
+            git merge upstream/main<br>
+            # Ahora tu local está al día con la empresa. ¡Ya puedes subir tu código!
+        </div>
+    </div>
+    
+
     <footer>
         <p>© 2025 Grupo MeruQ - Departamento de Tecnología.</p>
         <p>Desarrollado con ❤️ por el equipo de ingeniería.</p>
